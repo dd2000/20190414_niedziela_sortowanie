@@ -1,4 +1,4 @@
-package pl.sda.BoubleSort;
+package pl.sda.MySortMethod;
 /*
 1. Napisz metodę, która generować będzie tablicę
 N losowych liczb całkowitych z zakresu A .. B.
@@ -14,8 +14,6 @@ Testy:
 ● should not throw exception if array is zero-sized
 ● should sort if elements are not unique
 */
-
-import java.util.Date;
 
 import static java.lang.Math.random;
 
