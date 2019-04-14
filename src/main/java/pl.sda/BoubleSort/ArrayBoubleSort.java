@@ -21,7 +21,7 @@ import static java.lang.Math.random;
 
 public class ArrayBoubleSort {
     public static void main(String[] args) {
-        int sizeTab = 200000; // rozmiar tablicy
+        int sizeTab = 50000; // rozmiar tablicy
         int zakres = sizeTab*100; // zakres losowanych liczb (zakres wartości w tablicy)
         int[] tab = new int[sizeTab];
         //random();  <<--- zwraca wartości od 0 do 1.0 (np 0.004357, max= 1.0000
@@ -37,7 +37,7 @@ public class ArrayBoubleSort {
         System.out.println("\nTablica wynikowa:");
         for(int i=0;i<sizeTab; i++) System.out.print(tab[i]+" "); // wyświetlenie po sortowaniu
         System.out.println("Liczba elementów w tablicy = "+sizeTab);
-        System.out.println("Czas sortowania = "+(koniec-start)/1000+" sekund.");
+        System.out.println("Czas sortowania = "+(koniec-start)/1000+","+(koniec-start)%1000+" sekund.");
     }   // main();
 
     public static int[] sortuj(int[] ttab) {
